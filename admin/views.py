@@ -3,6 +3,8 @@ from user.models import User
 from flask_security import current_user
 from flask_admin import expose, BaseView
 
+from public.models import Post
+
 
 class UserView(ModelView):
     column_list = ['created_at', 'email','active','confirmed_at','last_login_at','roles']
@@ -15,3 +17,8 @@ class UserView(ModelView):
 class RoleView(ModelView):
     def is_accessible(self):
         return current_user.has_role('admin')
+
+
+
+class PostView(ModelView):
+    pass

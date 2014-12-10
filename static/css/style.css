@@ -436,3 +436,15 @@ footer {
 
   text-align: center;
 }
+
+h3 {
+  font-size: 28px;
+  margin: 20px 0;
+
+}
+
+.cd-main-content p {
+  font-size: 16px;
+  color: #999;
+  margin: 5px  0 25px 0;
+}

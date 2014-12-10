@@ -9,3 +9,8 @@ def index():
     return render_template('index.html')
 
 
+from models import Post
+
+@bp_public.route('/blog')
+def blog():
+    return render_template('blog.html',posts=Post.objects)
